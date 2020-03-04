@@ -16,5 +16,11 @@ namespace Shapes.Models
             return Radius * 2;
         }
 
+        public double getCircumference()
+        {
+            int diameter = this.getDiameter();
+            return diameter * Pi;
+        }
+
     }
 }
