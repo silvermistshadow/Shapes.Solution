@@ -17,5 +17,13 @@ namespace Shapes.Models
             result = Math.Round(result, 5);
             return result;
         }
+
+        public double getSurfaceArea()
+        {
+            int radius = Disk.Radius;
+            double result = (4 * Circle.Pi * (radius * radius));
+            result = Math.Round(result, 5);
+            return result;
+        }
     }
 }

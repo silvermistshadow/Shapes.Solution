@@ -16,10 +16,21 @@ namespace ShapesTests
             double expectedResult = Math.Round(((4 * Circle.Pi * (4 * 4 * 4)) / 3), 5);
             //Act
             double result = newSphere.getVoulume();
-            Console.WriteLine(result);
             //Assert
             Assert.AreEqual(result, expectedResult);
             
+        }
+
+        [TestMethod]
+        public void Sphere_GetSurfaceArea_SurfaceAreaOfSphere()
+        {
+            //Arrange
+            Sphere newSphere = new Sphere(new Circle(4));
+            double expectedResult = Math.Round((4 * Circle.Pi * (4 * 4)), 5);
+            //Act
+            double result = newSphere.getSurfaceArea();
+            //Assert
+            Assert.AreEqual(result, expectedResult);
         }
     }
 }
