@@ -12,7 +12,7 @@ _Pretty much the above_
 
 * _Requires .NET framework_
 * _download/clone repo_
-* _dotnet run (won't work yet)_
+* _dotnet run_
 
 ## Technologies Used
 
